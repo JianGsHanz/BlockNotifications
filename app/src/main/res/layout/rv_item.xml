@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/packed"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/packed"
+        app:layout_constraintBottom_toTopOf="@id/content"
+        />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/content"
+        />
+</android.support.constraint.ConstraintLayout>
